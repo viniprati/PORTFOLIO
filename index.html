@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinicius Prati | Desenvolvedor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fundo: '#0f172a',
+              primario: '#38bdf8',
+              destaque: '#3b82f6',
+              texto: '#e2e8f0',
+              'fundo-card': '#1e293b',
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      /* Adiciona um efeito de transição suave para as transformações */
+      .transition-transform {
+        transition: transform 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-fundo text-texto font-sans">
+    <header class="bg-fundo-card shadow-lg p-6 sticky top-0 z-10 backdrop-blur-sm bg-opacity-80">
+      <div class="max-w-5xl mx-auto flex justify-between items-center">
+        <div>
+          <h1 class="text-3xl font-bold text-primario">Vinicius Prati Machado</h1>
+          <p class="text-sm text-gray-400">Desenvolvedor Full-Stack & 🎮 Game Dev</p>
+        </div>
+        <!-- Futuramente pode adicionar um menu de navegação aqui -->
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto p-6">
+      <!-- Avatar e Saudação -->
+      <section class="mb-12 flex flex-col md:flex-row items-center gap-8 bg-fundo-card p-8 rounded-xl shadow-md">
+        <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-primario shadow-lg flex-shrink-0">
+          <img src="vinicius.png" alt="Avatar Vinicius" class="w-full h-full object-cover" />
+        </div>
+        <div>
+          <h2 class="text-3xl font-semibold text-primario">Olá! Eu sou o Vinicius 👋</h2>
+          <p class="text-gray-300 mt-2 text-lg">Desenvolvedor Full-Stack com paixão por interfaces, jogos e bots criativos, transformando ideias em realidade digital.</p>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DO JOGO EM DESTAQUE -->
+      <section id="game" class="mb-12">
+        <h2 class="text-3xl font-bold text-destaque mb-6 text-center">🎮 Jogo em Destaque: Gradon 🎮</h2>
+        <div class="bg-black p-2 rounded-xl shadow-lg border-2 border-primario">
+          <div class="aspect-video w-full">
+            <!-- 
+              IMPORTANTE: 
+              Substitua o valor do atributo 'src' abaixo pelo link PÚBLICO do seu jogo.
+              Seu jogo (exportado como WebGL) precisa estar hospedado em algum lugar 
+              (como GitHub Pages, Netlify, Vercel ou itch.io).
+            -->
+            <iframe
+              src="caminho/para/seu/jogo/index.html"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allowfullscreen
+              class="rounded-lg"
+            ></iframe>
+          </div>
+        </div>
+        <p class="text-center mt-4 text-gray-400 italic">
+          Gradon é um Tower Defense mitológico japonês que criei na Unity. Sinta-se à vontade para jogar!
+        </p>
+      </section>
+
+      <!-- SEÇÃO DE PROJETOS EM CARDS -->
+      <section id="projects" class="mb-12">
+        <h2 class="text-3xl font-bold text-destaque mb-6">Meus Projetos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Card Projeto 1: Gradon -->
+          <div class="bg-fundo-card p-6 rounded-xl shadow-lg flex flex-col transition-transform hover:scale-105">
+            <img src="https://via.placeholder.com/400x200.png/0f172a/38bdf8?text=Imagem+do+Gradon" alt="Imagem do jogo Gradon" class="rounded-md mb-4 w-full h-40 object-cover">
+            <h3 class="text-xl font-bold text-primario mb-2">🎮 Gradon</h3>
+            <p class="text-gray-300 flex-grow">Jogo Tower Defense com temática da mitologia japonesa, desenvolvido na engine Unity com scripts em C#.</p>
+            <div class="mt-4">
+              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Unity</span>
+              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">C#</span>
+            </div>
+            <div class="mt-6">
+              <a href="#" class="text-primario hover:underline font-semibold">Ver no GitHub →</a>
+            </div>
+          </div>
+
+          <!-- Card Projeto 2: Bot Anti-Raid -->
+          <div class="bg-fundo-card p-6 rounded-xl shadow-lg flex flex-col transition-transform hover:scale-105">
+            <img src="https://via.placeholder.com/400x200.png/0f172a/38bdf8?text=Imagem+do+Bot" alt="Imagem do Bot Anti-Raid" class="rounded-md mb-4 w-full h-40 object-cover">
+            <h3 class="text-xl font-bold text-primario mb-2">🤖 Bot Anti-Raid para Discord</h3>
+            <p class="text-gray-300 flex-grow">Bot para Discord focado em segurança, com funcionalidades para mitigar ataques de raid, spam e links maliciosos.</p>
+            <div class="mt-4">
+              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Node.js</span>
+              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">JavaScript</span>
+              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Discord.js</span>
+            </div>
+            <div class="mt-6">
+              <a href="https://github.com/viniprati/RedenBOT" class="text-primario hover:underline font-semibold">Ver no GitHub →</a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-destaque mb-4">🛠️ Tecnologias e Ferramentas</h2>
+        <div class="flex flex-wrap gap-3">
+          <!-- Coloquei um hover para dar um feedback visual -->
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61dafb" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" class="transition-opacity hover:opacity-80"/>
+          <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" class="transition-opacity hover:opacity-80"/>
+        </div>
+      </section>
+      
+      <!-- Outras seções como Formação e Certificações continuam ótimas como estão -->
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-destaque mb-4">Contato</h2>
+        <div class="space-y-4 text-lg">
+          <a href="mailto:viniprati6503@gmail.com" class="flex items-center gap-3 text-primario hover:underline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>viniprati6503@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/vinicius-prati" target="_blank" class="flex items-center gap-3 text-primario hover:underline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/viniprati" target="_blank" class="flex items-center gap-3 text-primario hover:underline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <div class="bg-fundo-card border-l-4 border-primario p-6 rounded-xl shadow-md flex flex-col md:flex-row items-center gap-6">
+          <div class="w-32 h-32 flex-shrink-0 bg-gray-800 rounded-full overflow-hidden">
+            <img src="luffy.jpg" alt="Luffy" class="object-cover w-full h-full" />
+          </div>
+          <blockquote class="text-lg italic text-gray-300">
+            "Mesmo se eu cair mil vezes, vou me levantar mil e uma."  
+            <span class="block mt-2 text-primario font-semibold">– Monkey D. Luffy (One Piece)</span>
+          </blockquote>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-fundo-card text-center p-4 mt-10 shadow-inner">
+      <p class="text-sm text-gray-400">© 2025 Vinicius Prati Machado. Feito com ❤️ e código.</p>
+    </footer>
+  </body>
+</html>
