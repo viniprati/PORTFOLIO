@@ -1,172 +1,406 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<!doctype html>
+<html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinicius Prati | Desenvolvedor</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              fundo: '#0f172a',
-              primario: '#38bdf8',
-              destaque: '#3b82f6',
-              texto: '#e2e8f0',
-              'fundo-card': '#1e293b',
-            }
-          }
-        }
-      };
-    </script>
-    <style>
-      /* Adiciona um efeito de transição suave para as transformações */
-      .transition-transform {
-        transition: transform 0.3s ease-in-out;
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#050b1a" />
+    <title>Vinicius Prati · Full Stack Web, APIs e automações</title>
+    <meta
+      name="description"
+      content="Portfólio de Vinicius Prati Machado, desenvolvedor Full Stack Web focado em sites, sistemas, APIs, automações e produtos digitais."
+    />
+    <meta name="author" content="Vinicius Prati Machado" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="viniprati.dev" />
+    <meta property="og:title" content="Vinicius Prati · Full Stack Web, APIs e automações" />
+    <meta
+      property="og:description"
+      content="Sites, sistemas web, APIs e automações com foco em organização, performance e experiência real de uso."
+    />
+    <meta property="og:image" content="social-preview.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vinicius Prati · Full Stack Web" />
+    <meta
+      name="twitter:description"
+      content="Desenvolvedor Full Stack Web focado em interfaces, APIs e automações."
+    />
+    <meta name="twitter:image" content="social-preview.svg" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-fundo text-texto font-sans">
-    <header class="bg-fundo-card shadow-lg p-6 sticky top-0 z-10 backdrop-blur-sm bg-opacity-80">
-      <div class="max-w-5xl mx-auto flex justify-between items-center">
-        <div>
-          <h1 class="text-3xl font-bold text-primario">Vinicius Prati Machado</h1>
-          <p class="text-sm text-gray-400">Desenvolvedor Full-Stack & 🎮 Game Dev</p>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para conteúdo principal</a>
+
+    <header class="hero" id="inicio">
+      <nav class="topbar" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="Voltar ao início">
+          <span>&lt;/&gt;</span><strong>viniprati</strong><i>_</i>
+        </a>
+
+        <div class="nav-links">
+          <a href="#projetos">projetos</a>
+          <a href="#servicos">serviços</a>
+          <a href="#stack">stack</a>
+          <a href="#contato">contato</a>
         </div>
-        <!-- Futuramente pode adicionar um menu de navegação aqui -->
+
+      </nav>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="terminal-line">developer / systems / web</p>
+          <p class="kicker">Web · APIs · automações · produto</p>
+          <h1>Full stack web para ideias que precisam sair do papel.</h1>
+          <p class="lede">
+            Sou Vinicius Prati Machado. Crio sites, sistemas web, APIs e automações com
+            foco em organização, performance e experiência real de uso.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="mailto:viniprati6503@gmail.com">Enviar e-mail</a>
+            <a class="btn" href="https://github.com/viniprati" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/vinicius-prati/" target="_blank" rel="noreferrer"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+
+        <aside class="hero-aside" aria-label="Resumo rápido">
+          <img
+            class="avatar"
+            src="https://github.com/viniprati.png"
+            width="140"
+            height="140"
+            alt="Foto de perfil de Vinicius Prati"
+          />
+          <div class="stats">
+            <div>
+              <strong>58</strong>
+              <span>repositórios públicos no GitHub</span>
+            </div>
+            <div>
+              <strong>03</strong>
+              <span>destaques principais no portfólio</span>
+            </div>
+            <div>
+              <strong>IFES</strong>
+              <span>Desenvolvimento de Sistemas para Internet</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </header>
 
-    <main class="max-w-5xl mx-auto p-6">
-      <!-- Avatar e Saudação -->
-      <section class="mb-12 flex flex-col md:flex-row items-center gap-8 bg-fundo-card p-8 rounded-xl shadow-md">
-        <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-primario shadow-lg flex-shrink-0">
-          <img src="vinicius.png" alt="Avatar Vinicius" class="w-full h-full object-cover" />
+    <main class="wrap" id="conteudo">
+      <section class="intro-section" aria-labelledby="sobre-title">
+        <div class="section-head">
+          <p class="kicker">Sobre</p>
+          <h2 id="sobre-title">Código claro, produto usável e entrega real.</h2>
         </div>
+        <div class="intro-grid">
+          <p>
+            Trabalho da primeira página publicada ao sistema com integrações. A base é
+            JavaScript, Node.js, Python, Java, Spring Boot, bancos de dados, APIs e bots para Discord.
+          </p>
+          <p>
+            Gosto de transformar necessidades soltas em interfaces bem organizadas, fluxos
+            simples de manter e entregas que possam evoluir sem virar um peso para o projeto.
+          </p>
+        </div>
+      </section>
+
+      <section id="projetos" class="projects-section" aria-labelledby="projetos-title">
+        <div class="section-head row">
+          <div>
+            <p class="kicker">Projetos</p>
+            <h2 id="projetos-title">Catálogo de projetos em destaque.</h2>
+          </div>
+          <span class="count">03 projetos</span>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card">
+            <div>
+              <p class="catalog-type">Plataforma Web</p>
+              <h3>FrontLab Academy</h3>
+              <p>
+                Plataforma educacional para prática de front-end, com trilhas, módulos,
+                exercícios, projetos de portfólio, progresso local e Mini IDE.
+              </p>
+            </div>
+            <dl class="catalog-specs">
+              <div><dt>Stack</dt><dd>JavaScript + Vite</dd></div>
+              <div><dt>Entrega</dt><dd>Plataforma + Mini IDE</dd></div>
+            </dl>
+            <ul class="catalog-features">
+              <li>Trilhas e módulos organizados por nível</li>
+              <li>Exercícios, desafios e projetos guiados</li>
+              <li>Progresso salvo no navegador</li>
+              <li>Base pensada para acessibilidade</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://frontlabacademy.vercel.app/" target="_blank" rel="noreferrer">Abrir projeto</a>
+              <a href="https://github.com/viniprati/FrontLab-Academy" target="_blank" rel="noreferrer">Ver código</a>
+            </div>
+          </article>
+
+          <article class="catalog-card is-featured">
+            <div>
+              <p class="catalog-type">Discord Bot</p>
+              <h3>HatsuTech</h3>
+              <p>
+                Bot de comunidade para o Animes Café, com sistemas internos para manter
+                operação, engajamento e organização rodando dentro do Discord.
+              </p>
+            </div>
+            <dl class="catalog-specs">
+              <div><dt>Stack</dt><dd>Python + MongoDB</dd></div>
+              <div><dt>Repositório</dt><dd>Código-fonte</dd></div>
+            </dl>
+            <ul class="catalog-features">
+              <li>Moderação, cargos e logs operacionais</li>
+              <li>Economia, inventário, loja e lootbox</li>
+              <li>Ranks por chat, voz, eventos e guildas</li>
+              <li>VIP, cargos temporários e recuperação</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/viniprati/HatsuTech" target="_blank" rel="noreferrer">Código HatsuTech</a>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div>
+              <p class="catalog-type">Site Oficial</p>
+              <h3>Animes Café</h3>
+              <p>
+                Presença digital para uma comunidade grande, feita para apresentar o
+                servidor, organizar informações e levar novos membros para o Discord.
+              </p>
+            </div>
+            <dl class="catalog-specs">
+              <div><dt>Stack</dt><dd>HTML + CSS</dd></div>
+              <div><dt>Deploy</dt><dd>Vercel</dd></div>
+            </dl>
+            <ul class="catalog-features">
+              <li>Comunicação direta para novos membros</li>
+              <li>Layout focado em comunidade e conversão</li>
+              <li>Publicação web rápida e acessível</li>
+              <li>Identidade visual alinhada ao servidor</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://animescafe.vercel.app/" target="_blank" rel="noreferrer">Abrir site</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-head row supporting-head">
+          <div>
+            <p class="kicker">Mais fortes</p>
+            <h2>Outros projetos que mostram back-end, IA e produto.</h2>
+          </div>
+          <span class="count">04 projetos</span>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card">
+            <div>
+              <span class="number">04</span>
+              <h3>Astra</h3>
+              <p>
+                Bot JavaScript para parcerias, blacklist, contador, ranking e painel
+                administrativo no Discord, com MongoDB, Redis opcional, health checks,
+                métricas Prometheus e eventos de produto.
+              </p>
+            </div>
+            <div class="card-meta">
+              <span>JavaScript</span><span>discord.js</span><span>MongoDB</span><span>Redis</span><span>Prometheus</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/viniprati/Astra" target="_blank" rel="noreferrer">Ver código</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="number">05</span>
+              <h3>Voz do Povo</h3>
+              <p>
+                PWA de hackathon para democratizar acesso à informação legislativa:
+                traduz leis com Gemini, gera explicações acessíveis, oferece áudio,
+                fiscalização de obras e plebiscitos digitais.
+              </p>
+            </div>
+            <div class="card-meta">
+              <span>Hackathon</span><span>IA Gemini</span><span>PWA</span><span>JavaScript</span><span>Python</span>
+            </div>
+            <div class="card-links">
+              <a href="https://voz-do-povo-pi.vercel.app/" target="_blank" rel="noreferrer">Abrir projeto</a>
+              <a
+                href="https://github.com/viniprati/Voz-do-povo-Devs-de-Impacto-Hackathon"
+                target="_blank"
+                rel="noreferrer"
+                >Ver código</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="number">06</span>
+              <h3>Obras.org</h3>
+              <p>
+                Painel de fiscalização cidadã para acompanhar obras públicas, status,
+                progresso físico, orçamento, origem de verba e contexto urbano dentro
+                do ecossistema Voz do Povo.
+              </p>
+            </div>
+            <div class="card-meta">
+              <span>Hackathon MVP</span><span>Data UI</span><span>Transparência</span><span>HTML</span><span>Vercel</span>
+            </div>
+            <div class="card-links">
+              <a href="https://ograsorg.vercel.app/" target="_blank" rel="noreferrer">Abrir projeto</a>
+              <a
+                href="https://github.com/viniprati/obras.org-Devs-de-Imapcto-Hackathon"
+                target="_blank"
+                rel="noreferrer"
+                >Ver código</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="number">07</span>
+              <h3>Task Manager API</h3>
+              <p>
+                API REST em Java 17 e Spring Boot 3 para gerenciamento de tarefas,
+                com CRUD, filtros, estatísticas, validações, documentação Swagger e
+                banco H2 em memória.
+              </p>
+            </div>
+            <div class="card-meta">
+              <span>Java 17</span><span>Spring Boot</span><span>JPA</span><span>H2</span><span>Swagger</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/viniprati/TaskManagerApplication" target="_blank" rel="noreferrer"
+                >Ver código</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="servicos" aria-labelledby="servicos-title">
+        <div class="section-head row">
+          <div>
+            <p class="kicker">Serviços</p>
+            <h2 id="servicos-title">O que eu construo quando o projeto precisa andar.</h2>
+          </div>
+        </div>
+
+        <div class="service-grid">
+          <article>
+            <span>01</span>
+            <h3>Páginas comerciais</h3>
+            <p>Landing pages e sites institucionais responsivos, com hierarquia clara e caminho de conversão.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Sistemas web</h3>
+            <p>Painéis e fluxos internos para organizar dados, usuários, permissões e rotinas de operação.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>APIs e integrações</h3>
+            <p>Back-end em Node.js, Python ou Java, APIs REST, regras de negócio e conexão com banco de dados.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Automações</h3>
+            <p>Fluxos para reduzir tarefas repetitivas, conectar ferramentas e acelerar processos do dia a dia.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="stack-band" aria-labelledby="stack-title">
         <div>
-          <h2 class="text-3xl font-semibold text-primario">Olá! Eu sou o Vinicius 👋</h2>
-          <p class="text-gray-300 mt-2 text-lg">Desenvolvedor Full-Stack com paixão por interfaces, jogos e bots criativos, transformando ideias em realidade digital.</p>
+          <p class="kicker">Stack e formação</p>
+          <h2 id="stack-title">Tecnologias usadas para construir produtos web.</h2>
+          <p>
+            Ferramentas para bots, APIs, integrações, dados, observabilidade e interfaces. A lista é
+            prática: entrou o que aparece nos repositórios mais fortes.
+          </p>
         </div>
+        <button class="btn primary" type="button" data-open-stack>Ver stack completa</button>
       </section>
 
-      <!-- SEÇÃO DO JOGO EM DESTAQUE -->
-      <section id="game" class="mb-12">
-        <h2 class="text-3xl font-bold text-destaque mb-6 text-center">🎮 Jogo em Destaque: Gradon 🎮</h2>
-        <div class="bg-black p-2 rounded-xl shadow-lg border-2 border-primario">
-          <div class="aspect-video w-full">
-            <!-- 
-              IMPORTANTE: 
-              Substitua o valor do atributo 'src' abaixo pelo link PÚBLICO do seu jogo.
-              Seu jogo (exportado como WebGL) precisa estar hospedado em algum lugar 
-              (como GitHub Pages, Netlify, Vercel ou itch.io).
-            -->
-            <iframe
-              src="caminho/para/seu/jogo/index.html"
-              width="100%"
-              height="100%"
-              frameborder="0"
-              allowfullscreen
-              class="rounded-lg"
-            ></iframe>
-          </div>
+      <section id="contato" class="contact" aria-labelledby="contato-title">
+        <div>
+          <p class="kicker">Contato</p>
+          <h2 id="contato-title">Tem uma ideia boa? Eu posso ajudar a transformar em produto.</h2>
+          <p>
+            Me chama para conversar sobre sites, sistemas, automações ou oportunidades de
+            desenvolvimento web.
+          </p>
         </div>
-        <p class="text-center mt-4 text-gray-400 italic">
-          Gradon é um Tower Defense mitológico japonês que criei na Unity. Sinta-se à vontade para jogar!
-        </p>
-      </section>
-
-      <!-- SEÇÃO DE PROJETOS EM CARDS -->
-      <section id="projects" class="mb-12">
-        <h2 class="text-3xl font-bold text-destaque mb-6">Meus Projetos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
-          <!-- Card Projeto 1: Gradon -->
-          <div class="bg-fundo-card p-6 rounded-xl shadow-lg flex flex-col transition-transform hover:scale-105">
-            <img src="https://via.placeholder.com/400x200.png/0f172a/38bdf8?text=Imagem+do+Gradon" alt="Imagem do jogo Gradon" class="rounded-md mb-4 w-full h-40 object-cover">
-            <h3 class="text-xl font-bold text-primario mb-2">🎮 Gradon</h3>
-            <p class="text-gray-300 flex-grow">Jogo Tower Defense com temática da mitologia japonesa, desenvolvido na engine Unity com scripts em C#.</p>
-            <div class="mt-4">
-              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Unity</span>
-              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">C#</span>
-            </div>
-            <div class="mt-6">
-              <a href="#" class="text-primario hover:underline font-semibold">Ver no GitHub →</a>
-            </div>
-          </div>
-
-          <!-- Card Projeto 2: Bot Anti-Raid -->
-          <div class="bg-fundo-card p-6 rounded-xl shadow-lg flex flex-col transition-transform hover:scale-105">
-            <img src="https://via.placeholder.com/400x200.png/0f172a/38bdf8?text=Imagem+do+Bot" alt="Imagem do Bot Anti-Raid" class="rounded-md mb-4 w-full h-40 object-cover">
-            <h3 class="text-xl font-bold text-primario mb-2">🤖 Bot Anti-Raid para Discord</h3>
-            <p class="text-gray-300 flex-grow">Bot para Discord focado em segurança, com funcionalidades para mitigar ataques de raid, spam e links maliciosos.</p>
-            <div class="mt-4">
-              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Node.js</span>
-              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">JavaScript</span>
-              <span class="inline-block bg-destaque/20 text-destaque text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Discord.js</span>
-            </div>
-            <div class="mt-6">
-              <a href="https://github.com/viniprati/RedenBOT" class="text-primario hover:underline font-semibold">Ver no GitHub →</a>
-            </div>
-          </div>
-          
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:viniprati6503@gmail.com">viniprati6503@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/vinicius-prati/" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a class="btn" href="https://github.com/viniprati" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </section>
-
-      <section class="mb-12">
-        <h2 class="text-3xl font-bold text-destaque mb-4">🛠️ Tecnologias e Ferramentas</h2>
-        <div class="flex flex-wrap gap-3">
-          <!-- Coloquei um hover para dar um feedback visual -->
-          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61dafb" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" class="transition-opacity hover:opacity-80"/>
-          <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" class="transition-opacity hover:opacity-80"/>
-        </div>
-      </section>
-      
-      <!-- Outras seções como Formação e Certificações continuam ótimas como estão -->
-
-      <section class="mb-12">
-        <h2 class="text-3xl font-bold text-destaque mb-4">Contato</h2>
-        <div class="space-y-4 text-lg">
-          <a href="mailto:viniprati6503@gmail.com" class="flex items-center gap-3 text-primario hover:underline">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <span>viniprati6503@gmail.com</span>
-          </a>
-          <a href="https://linkedin.com/in/vinicius-prati" target="_blank" class="flex items-center gap-3 text-primario hover:underline">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com/viniprati" target="_blank" class="flex items-center gap-3 text-primario hover:underline">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            <span>GitHub</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="mb-10">
-        <div class="bg-fundo-card border-l-4 border-primario p-6 rounded-xl shadow-md flex flex-col md:flex-row items-center gap-6">
-          <div class="w-32 h-32 flex-shrink-0 bg-gray-800 rounded-full overflow-hidden">
-            <img src="luffy.jpg" alt="Luffy" class="object-cover w-full h-full" />
-          </div>
-          <blockquote class="text-lg italic text-gray-300">
-            "Mesmo se eu cair mil vezes, vou me levantar mil e uma."  
-            <span class="block mt-2 text-primario font-semibold">– Monkey D. Luffy (One Piece)</span>
-          </blockquote>
-        </div>
-      </section>
-
     </main>
 
-    <footer class="bg-fundo-card text-center p-4 mt-10 shadow-inner">
-      <p class="text-sm text-gray-400">© 2025 Vinicius Prati Machado.</p>
+    <footer class="footer">
+      <span>viniprati.dev</span>
+      <span>Full Stack Web / Node.js / Python / Java</span>
     </footer>
+
+    <dialog class="stack-dialog" aria-labelledby="stack-dialog-title">
+      <div class="dialog-card">
+        <div class="dialog-head">
+          <div>
+            <p class="kicker">Com o que eu trabalho</p>
+            <h2 id="stack-dialog-title">Stack completa</h2>
+          </div>
+          <button type="button" class="close-dialog" aria-label="Fechar">×</button>
+        </div>
+        <div class="stack-groups">
+          <section>
+            <h3>Front-end</h3>
+            <p>HTML5 CSS3 JavaScript React Angular Tailwind CSS Vite responsividade acessibilidade UX Mini IDE</p>
+          </section>
+          <section>
+            <h3>Back-end e dados</h3>
+            <p>Node.js Python Java Spring Boot APIs REST MongoDB Redis H2 JPA regras de negócio integrações autenticação</p>
+          </section>
+          <section>
+            <h3>Bots e automação</h3>
+            <p>discord.js discord.py slash commands moderação ranks economia cargos temporários painéis administrativos rotinas operacionais</p>
+          </section>
+          <section>
+            <h3>Observabilidade</h3>
+            <p>Health checks métricas Prometheus logging estruturado PostHog eventos de produto sharding monitoramento de MongoDB</p>
+          </section>
+          <section>
+            <h3>IA e produto</h3>
+            <p>Google Gemini PWA dashboards de dados acessibilidade educação tecnologia cívica validação de MVPs</p>
+          </section>
+          <section>
+            <h3>Entrega</h3>
+            <p>Git GitHub Vercel deploy estático organização de código revisão manutenção evolução</p>
+          </section>
+          <section>
+            <h3>Formação</h3>
+            <p>Desenvolvimento de Sistemas para Internet no IFES projetos reais hackathons produto digital</p>
+          </section>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

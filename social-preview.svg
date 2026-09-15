@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#050b1a"/>
+  <path d="M740 45c170 0 308 115 308 256S910 557 740 557 432 442 432 301 570 45 740 45Z" fill="#0a1430"/>
+  <path d="M84 120h1032v390H84z" fill="none" stroke="#4c8bff" stroke-width="2" opacity=".45"/>
+  <path d="M110 430h790" stroke="#8fb7ff" stroke-width="2" opacity=".55"/>
+  <path d="M930 80l102 470M1060 55l70 320M180 0l120 520" stroke="#4c8bff" stroke-width="2" opacity=".22"/>
+  <text x="110" y="195" fill="#8fb7ff" font-family="monospace" font-size="34" font-weight="700">&lt;/&gt; developer / systems / web</text>
+  <text x="110" y="315" fill="#effff2" font-family="Georgia, serif" font-size="82" font-weight="700">Vinicius Prati</text>
+  <text x="110" y="395" fill="#effff2" font-family="Georgia, serif" font-size="54">Full Stack Web</text>
+  <text x="110" y="482" fill="#9baccc" font-family="Arial, sans-serif" font-size="30">Sites, sistemas, APIs e automações.</text>
+  <circle cx="1014" cy="190" r="12" fill="#4c8bff"/>
+  <circle cx="1064" cy="344" r="9" fill="#8fb7ff"/>
+</svg>
